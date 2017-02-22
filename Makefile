@@ -1,4 +1,4 @@
-# Time-stamp: <[Makefile] modified by Guangxu Pan on 2017-02-07 13:53:34 星期二>
+# Time-stamp: <[Makefile] modified by Guangxu Pan on 2017-02-22 09:40:10 星期三>
 
 CC  = gcc
 CXX = g++
@@ -42,7 +42,7 @@ clean :
 # --------------------------------------------------
 SRC_MYHELLOWORLD := $(wildcard *.cc)
 BIN_MYHELLOWORLD  = myhelloworld
-LIBS_MYHELLOWORLD = -lx $(LIBS_COMMON)
+LIBS_MYHELLOWORLD = $(LIBS_COMMON)
 
 OBJ_MYHELLOWORLD := $(SRC_MYHELLOWORLD:%.cc=%.o)
 $(BIN_MYHELLOWORLD): $(OBJ_MYHELLOWORLD)
